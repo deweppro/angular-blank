@@ -19,7 +19,7 @@ import { AppComponent } from './app.component';
     UxwbComponentsModule,
     UxwbServicesModule.forRoot({ ajaxPrefixUrl:'/api', webSocketUrl:'/ws' }),
     ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production,
+      enabled: environment.worker,
       registrationStrategy: 'registerWhenStable:30000',
     }),
   ],

@@ -1,16 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Application</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="/assets/icons/favicon-196.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#5BA698">
+    <base href="/">
+    <title>Application</title>
+    <meta charset="utf-8">
+    <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval';"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#5BA698">
+
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-196.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
-  <app-root></app-root>
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
+<app-root></app-root>
+<noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>
